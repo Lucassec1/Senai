@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <script>
+        function CalcularIMC() {
+            var peso = (document.getElementById("peso").value)
+            var altura = (document.getElementById("altura").value)/100
+        
+            var IMC = (peso / (altura * altura)).toFixed(2);
+
+            if(IMC < 18.5){
+                alert("Você está abaixo do peso!");
+            }else if(IMC >= 18.5 && IMC <25){
+                alert("Você está com o peso ideal!");
+            }else if(IMC >= 25 && IMC < 30){
+                alert("Você está levemente acima do peso!");
+            }else if(IMC >= 30 && IMC < 35){
+                alert("Cuidado! Obesidade grau I!");
+            }else if(IMC >= 35 && IMC < 40){
+                alert("Cuidado! Obesidade grau II!");    
+            }   
+        }  
+    </script>
+</head>
+<body class="body">
+    <h1>Calculadora de IMC</h1>
+    <div class="main">
+
+        <div class="label">
+            <h5>Altura</h5>
+            <input required type="text" id="altura" placeholder="Digite sua altura...">
+        </div>
+        <div class="label">
+            <h5>Peso</h5>
+            <input required type="text" id="peso" placeholder="Digite seu peso...">
+        </div>
+
+        <button type="submit" onclick="CalcularIMC();">Calcular</button>
+    </div>
+</body>
+</html>

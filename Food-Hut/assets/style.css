@@ -1,0 +1,791 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #2E2E2E;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 8%; 
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+
+nav a {
+    color: #000;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-inline: auto;
+    padding-right: 5%;
+}
+
+#hamburguer {
+    display: none;
+}
+
+#button_header {
+    margin-left: 6%;
+    margin-right: -2%;
+}
+
+.button {
+    background-color: #F54748;
+    width: 18%;
+    height: 2.8rem;
+    border-radius: 6.25rem;
+    border: none;
+    color: #fff;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.main_1 {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+}
+
+.heart {
+    max-width: 19%;
+    padding: 1%;
+    font-size: 100%;
+    background: rgba(245, 71, 71, 0.1);
+    border-radius: 6.25rem;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+.esquerda .titulo {
+    font-size: 3.5rem;
+    max-width: 70%;
+    height: auto;
+    font-weight: 600;
+}
+
+.main_1 .red_color {
+    color: #F54748;
+    font-weight: 650;
+}
+
+.main_1 .yellow_color {
+    color: #FDC55E;
+    font-weight: 650;
+}
+
+.main_1 p {
+    margin-top: 2%;
+    max-width: 60%;
+    font-size: 1.3rem;
+    color: #191919;
+}
+
+#pesquisa {
+    border-radius: 6.25rem;
+    border: 0.01rem solid #191919;
+    width: 470px;
+    height: 3.4rem;
+    padding-left: 0rem;
+    background-image: url('./image/blacksearch.png');
+    background-repeat: no-repeat;
+    background-position: 1.1rem center;
+    padding-left: 3.2rem;
+}
+
+.search {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center; 
+    max-width: 100%;
+}
+
+.yellow_search {
+    margin-left: -6%;
+}
+
+.main_1 .two_buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+    gap: 3%;
+    max-width: 100%;
+}
+
+.two_buttons button {
+    gap: 10%;
+    text-align: center;
+    width: 30%;
+}
+
+.video {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.video img {
+    box-shadow: 0 1rem 2rem rgba(223, 105, 81, 0.3);
+    border-radius: 100%;
+}
+
+.mulher {
+    display: flex;
+    align-items: flex-start;
+    max-width: 50%;
+}
+
+.mulher img {
+    max-width: 100%;
+    height: auto;
+}
+
+ #flecha1 {
+    position: relative;
+    display: flex;
+    right: 16%;
+    height: auto;
+} 
+
+.main_2 {
+    margin-top: 4%;
+}
+
+.main_2 .red_color {
+    color: #F54748;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.titulo2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+h2, .conteudo p {
+    text-align: center;
+    display: block;
+    width: 60%;
+    margin-inline: auto;
+}
+
+.conteudo {
+    text-transform: capitalize;
+}
+.pratos {
+    margin-top: 4rem;
+    display: flex;
+    margin-inline: auto;
+    width: 80%;
+    justify-content: center;
+    gap: 2%;
+}
+
+.pessoas {
+    display: flex;
+    margin: 3px 0;
+    align-items: center;
+    gap: 2%;
+    justify-content: center;
+    margin-top: -0.5rem;
+}
+
+.imagens img {
+    margin-left: -1.6rem;
+}
+
+.imagens .imagem1 {
+    margin-left: 0;
+}
+
+.pratos h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    gap: 3%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 450;
+}
+
+.pratos p {
+    width: 80%;
+    text-align: center;
+    margin-inline: auto;
+    font-size: 1rem;
+}
+
+.prato {
+    width: 55%;
+    text-align: center;
+    background: linear-gradient(179.69deg, rgba(255, 255, 255, 0) 50%, #F54748 303.75%);
+    border-radius: 1.3rem;
+}
+
+.gradiente_div {
+    background-image: linear-gradient(360deg, #f5474700, #f5474709, #f57e4774);
+    border-radius: 100%;
+    width: 16.3rem;
+    height: 16.3rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.white_div {
+    background-color: white;
+    border-radius: 100%;
+    width: 14.1rem;
+    height: 14.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price {
+    position: relative;
+    background: #FDC55E;
+    border-radius: 100%;
+    width: 3.75rem;
+    height: 3.75rem;
+    border: 4px solid white;
+    top: -5.2rem;
+    left: 10.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: -23%;
+}
+
+.price span {
+    color: white;
+}
+
+.nome_prato {
+    color: #F54748;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.order_now {
+    position: relative;
+    bottom: -1.25rem;
+    width: 8.18rem;
+    height: 2.8rem;
+    margin-top: 0.5rem;
+    background: #F54748;
+    border-radius: 6.25rem;
+    border: none;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.main_3 {
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    gap: 2%;
+}
+
+.mano {
+    display: flex;
+    align-items: flex-start;
+    max-width: 50%;
+}
+
+#cozinheiro {
+    display: none;
+}
+
+.lado2 {
+    padding-top: 6rem;
+    width: 50%;
+    margin-left: -8%;
+}
+
+.titulo3 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    max-width: 50%;
+    height: 5rem;
+    text-align: left;
+    margin-left: 0;
+    margin-bottom: 4rem;
+}
+
+.lado2 p {
+    max-width: 100%;
+    font-size: 1.1rem;
+}
+
+.main_3 .red_color {
+    color: #F54748;
+    font-weight: 700;
+}
+
+.main_3 .yellow_color {
+    color: #FDC55E;
+    font-weight: 700;
+}
+
+.servicos {
+    margin-top: 2rem;
+    display: flex;
+}
+
+.servico1 {
+    min-width: 40%;
+}
+
+.servico2 {
+    min-width: 40%;
+}
+
+.servico {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+.about_us {
+    font-size: 1.1rem;
+    font-weight: 400;
+    width: 7.1rem;
+    height: 2.8rem;
+    border-radius: 6.25rem;
+    border: none;
+    background: #F54748;
+    color: #fff;
+}
+
+.main_4 {
+    margin-top: 5rem;
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+}
+
+.titulo4 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    max-width: 40%;
+    height: 7.5rem;
+    text-align: center;
+}
+
+.main_4 .red_color {
+    color: #F54748;
+    font-weight: 700;
+}
+
+.main_4 .yellow_color {
+    color: #FDC55E;
+    font-weight: 700;
+}
+
+.lista, #link a {
+    text-decoration: none;
+    display: flex;
+    gap: 1.5%;
+    justify-content: center;
+    list-style: none;
+    text-decoration: none;
+    margin-top: 1.5rem;
+}
+
+#link a {
+    display: flex; 
+    align-items: center;
+    width: 6.5rem;
+    height: 2.8rem;
+    border-radius: 100px;
+    color: rgba(25, 25, 25, 0.8);
+}
+
+#ramen {
+    background: #f54747;
+    color: #fff !important;
+    border-radius: 6.25rem;
+    font-weight: 400;
+    border: none;
+}
+
+.opacidade {
+    border: 2px solid #191919;
+    border-radius: 6.25rem;
+    opacity: 0.6;
+}
+
+.main_5 {
+    margin-top: 10rem;
+    display: flex;
+    align-items: center;
+    margin-inline: auto;
+    height: 37.5rem;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(253, 198, 0, 0.1) 73.18%);
+}
+
+.div_esquerda {
+    margin-left: 5rem;
+    padding-bottom: 5rem;
+    max-width: 80%;
+}
+
+.titulo5 {
+    font-size: 2.4rem;
+    max-width: 36.3rem;
+    height: 8.4rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: left;
+    margin-left: 0;
+}
+
+.titulo5 .yellow_color {
+    color: #FDC55E;
+    font-weight: 700;
+}
+
+.titulo5 .red_color {
+    color: #F54748;
+    font-weight: 700;
+}
+
+.main_5 p {
+    font-size: 1rem;
+    color: #191919;
+    margin-top: 2.9rem;
+    max-width: 92%;
+}
+
+.instalar {
+    padding-top: 2rem;
+    display: flex;
+    gap: 5%;
+}
+
+.rapaz img {
+    position: relative;
+    left: 13%;
+    margin-top: 10rem;
+    max-width: 180%;
+}
+
+.footer {
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+.foodhut {
+    max-width: 17%;
+}
+
+.titulo6 {
+    font-weight: 600;
+    font-size: 1.75rem;
+    color: #F54748;
+}
+
+.foodhut p {
+    font-size: 1rem;
+    margin-top: 0.7rem;
+}
+
+.social {
+    margin-top: 1rem;
+    display: flex;
+    gap: 10%;
+}
+
+.double_lista {
+    display: flex;
+}
+
+.sobre {
+    list-style: none;
+    margin-left: 10rem;
+    max-width: 40%;
+}
+
+.sobre li {
+    margin-top: 1rem;
+}
+
+.subtitulo {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #F54748;
+}
+
+.lista1 {
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.subscribe {
+    margin-left: 10rem;
+    max-width: 23%;
+}
+
+.subscribe h3{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #F54748;
+}
+
+.subscribe p {
+    margin-top: 1rem;
+}
+
+.sub_botoes {
+    margin-top: 1rem;
+    display: flex;
+    gap: 4%;
+}
+
+.email {
+    background: rgba(25, 25, 25, 0.1);
+    border-radius: 2.4rem;
+    max-width: 65%;
+    height: 3.1rem;
+    border-radius: 2.4rem;
+    border: none;
+    color: #191919f6;
+    padding: 1.3rem;
+}
+
+.submit {
+    width: 32%;
+    height: 3.1rem;
+    text-align: center;
+    background: #F54748;
+    border-radius: 2.4rem;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.copyright {
+    margin-top: 4.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    font-size: 1rem; 
+}
+
+@media screen and (max-width: 1024px) {
+    header nav {
+        display: none;
+    }
+    
+    .main_1 {
+        flex-wrap: wrap-reverse;
+        padding: 0 3%;
+    }
+
+    #hamburguer {
+        display: inline;
+    }
+    
+    .mulher {
+        min-width: 107%;
+    }
+
+    .esquerda {
+        margin-top: 10%; 
+        padding: 0 3%;
+    }
+
+    .esquerda > * {
+        padding: 0.7% 0.3%;
+    }
+
+    .titulo  {
+        line-height: 130%;
+        min-width: 80%;
+        font-size: 3rem !important;
+        font-weight: 750 !important;
+    }
+
+    .heart {
+        margin-bottom: 3%;
+        padding: 1%;
+        min-width: 31%;
+    }
+
+    .esquerda p {
+        min-width: 78%;
+        font-size: 1.2rem;
+    }
+
+    .search {
+        max-width: 83%;
+    }
+
+    .yellow_search {
+        margin-left: -12%;
+    }
+
+    .two_buttons {
+        min-width: 400%;
+    
+    }
+    
+    .two_buttons .button {
+        width: 10rem;
+    }
+
+    .titulo2 {
+        min-width: 65%;
+        margin-top: 5rem;
+    }
+
+    .conteudo p {
+        width: 80%;
+    }
+
+    .pratos .prato:nth-child(n+2) {
+        display: none;
+    }
+
+    .prato {
+        min-width: 85%;
+    }
+
+    .main_3 {
+        flex-wrap: wrap;
+    }
+
+    .mano {
+        display:none;
+    }
+
+    #cozinheiro {
+        display: flex;
+        min-width: 100%;
+    }
+
+    .lado2 {
+        margin: 0;
+        padding: 0 6%;
+    }
+
+    .titulo3 {
+        min-width: 200%;
+        font-size: 3rem;
+        margin-top: 10%;
+    }
+
+    .lado2 p {
+        margin-top: 95%;
+        min-width: 220%;
+    }
+
+    .servicos {
+        padding: 0 3%;
+        flex-direction: column;
+        margin-top: 30%;
+        min-width: 165%;
+    }
+
+    .about_us {
+        margin-top: 10%;
+    }
+
+    .titulo4 {
+        min-width: 70%;
+    }
+
+    .lista {
+        gap: 7%;
+        margin-top: 15%;
+    }
+    
+    .lista li:nth-child(n+4) {
+        display: none;
+    }
+
+    .main_5 {
+        flex-wrap: wrap-reverse;
+        margin-top: 130%;
+        margin-left: -10%;
+    }
+
+    .rapaz {
+        min-width: 115%;
+        margin-left: 10%;
+    }
+
+    .titulo5 {
+        min-width: 80%;
+        margin-top: -30%;
+    }
+
+    .main_5 p {
+        max-width: 80%;
+        margin-top: 15%;
+    }
+
+    .instalar {
+        margin-top: 5%;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        margin-left: -9%;
+    }
+
+    .foodhut {
+        min-width: 65%;
+    }
+
+    .double_lista {
+        margin-top: 5%;
+        margin-left: -24%; 
+    }
+
+    .sobre {
+        margin-left: 5rem;
+        min-width: 60%;
+    }
+
+    .subscribe {
+        min-width: 70%;
+        margin-top: 5%;
+        margin-left: 4%;
+    }
+
+    .sub_botoes {
+        margin-left: -1%;
+    }
+}
+
+@media screen and (min-width: 1025px) {}
