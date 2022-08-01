@@ -119,4 +119,3 @@ const calcularPorcentagem = () => {
 }
 
 porcentagem.addEventListener('click', calcularPorcentagem)
-
